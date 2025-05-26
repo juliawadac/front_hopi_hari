@@ -1,6 +1,7 @@
 
 // Verificar se há um usuário logado
 document.addEventListener('DOMContentLoaded', function() {
+    const userToken = JSON.parse(localStorage.getItem('token')) || {};
     const userData = JSON.parse(localStorage.getItem('user')) || {};
     
     if (userData.firstName) {
@@ -8,12 +9,12 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('user-email').textContent = userData.email;
     } else {
         // Redirecionar para a página de login se não houver usuário
-        window.location.href = '/';
+        window.location.href = '../login/login.html';
     }
     
     // Botão de logout
     document.getElementById('logout-btn').addEventListener('click', function() {
-        localStorage.removeItem('user');
+        localStorage.removeItem('token');
         window.location.href = '/';
     });
     
