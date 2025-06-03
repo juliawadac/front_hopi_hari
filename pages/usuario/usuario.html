@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Perfil do Usuário</title>
+  <link rel="stylesheet" href="usuario.css">
+</head>
+<body>
+  <div class="profile-container">
+    <h2>Meu Perfil</h2>
+    <form action="/atualizar-usuario" method="post">
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" value="João" required>
+      </div>
+      <div class="form-group">
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome" value="Silva" required>
+      </div>
+      <div class="form-group">
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" value="(11) 91234-5678" required>
+      </div>
+      <div class="form-group">
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input type="date" id="dataNascimento" name="dataNascimento" value="1990-05-20" required>
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" value="joao.silva@email.com" required>
+      </div>
+      <div class="form-group">
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" value="123456" required>
+      </div>
+      <button type="submit">Salvar Alterações</button>
+    </form>
+  </div>
+</body>
+</html>

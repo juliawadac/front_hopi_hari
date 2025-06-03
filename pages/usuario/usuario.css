@@ -1,0 +1,60 @@
+body {
+    background-image: url('../images/mapa-hopi.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(86, 80, 80, 0.1);
+  width: 400px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: orange ;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
