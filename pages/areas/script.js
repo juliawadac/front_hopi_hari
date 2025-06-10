@@ -16,6 +16,17 @@ document.addEventListener('DOMContentLoaded', async function() {
     console.log(data);
 
     for (var brinquedo of data.resultados){
-        console.log
+        console.log (brinquedo);
+
+        const grid = document.querySelector ("rides-grid");
+        grid.innerHTML + `
+        <div class="ride-card">
+        div class="ride-image" style="background-image: url('../img../${brinquedo.imagem}');"></div>
+        <div class="ride-info">
+            <h3>${brinquedo.nome}</h3>
+            <div class=ride-time">${brinquedo.waiting_time} min </div>
+            <span class="ride-status status busy">${brinquedo.status}</span>
+            </div>
+        </div>`
     }
 });  
